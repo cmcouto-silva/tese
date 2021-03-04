@@ -1,0 +1,13 @@
+*.*
+
+!.gitignore
+!*.keep
+
+!*.md
+!*.yaml
+
+!*.R
+!*.py
+
+!dag.svg
+
