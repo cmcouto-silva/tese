@@ -4,10 +4,12 @@
 !*.keep
 
 !*.md
+!docker/**/*.txt
 !*.yaml
 
 !*.R
 !*.py
+!*.sh
 
 !dag.svg
 
