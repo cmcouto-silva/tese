@@ -52,4 +52,4 @@ que os dados de entrada (_e.g._ VCF, Plink) possuem limitações éticas e por e
 
 Se for utilizar o arquivo de configuração para o ambiente conda, note que se faz necessário executar o comando `snakemake -j1 --use-conda --until setup_env` uma primeira e única vez, para a correta instalação de todas as dependências do workflow, visto que há pacotes do R não inclusos nos repositórios do Conda.
 
-Se for utilizar o [Docker container](https://hub.docker.com/repository/docker/cmcoutosilva/tese), certifique-se de instalar o Docker primeiro.
+Se for utilizar o [Docker container](https://hub.docker.com/repository/docker/cmcoutosilva/tese), certifique-se de [instalar](https://docs.docker.com/get-docker/) o Docker primeiro.
