@@ -45,7 +45,7 @@ Para saber quantos núcleos tem disponível no seu computador, no ambiente virtu
 
 ### Resultados
 
-Todas as figuras e tabelas resultantes deste workflow estão disponíveis no [repositório Dryad](#) referente a tese. Vale ressaltar, contudo,
+Todas as figuras e tabelas resultantes deste workflow estão disponíveis no [repositório de dados Mendeley](http://dx.doi.org/10.17632/gztff7wmjt.1) referente a tese. Vale ressaltar, contudo,
 que os dados de entrada (_e.g._ VCF, Plink) possuem limitações éticas e por esse motivo não estão inclusos no repositório. 
 
 ### Observações
