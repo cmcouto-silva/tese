@@ -141,7 +141,7 @@ ggsave("figures/pdf/ds1_pbsw_pergene.pdf", ds1_pbs_pergene_plot, height = 6, wid
 
 ## -- Plot SNP & Gene -- ##
 
-# Dataset S2 - PBS - snp vs gene
+# Dataset S1 - PBS - snp vs gene
 ds1_pbs_title <- ggdraw() + draw_label("Dataset S1 - PBS", fontface='bold', size = 21)
 
 ds1_pbs_grid <- plot_grid (
@@ -247,5 +247,3 @@ ggsave("figures/pdf/ds2_pbsw_both.pdf", ds2_pbs_grid, height = 11, width = 11, d
 ######  3.2.1 DATASET S1  ######
 
 ######  3.2.2 DATASET S2  ######
-
-
