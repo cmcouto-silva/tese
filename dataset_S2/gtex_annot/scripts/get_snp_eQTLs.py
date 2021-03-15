@@ -97,10 +97,20 @@ for method in methods:
     eqtl_dict = {}
     
     for idx,row in eqtl_input_df.iterrows():
-        snpgene = row['SNP'] + '-' + row['GENE']
-        print(f'  {snpgene} {idx+1}/{eqtl_input_df.shape[0]}  '.center(50, '-')); print('-'*50, end='\n\n')
-        eqtl_dict[snpgene] = get_eQTL(row['SNP'], row['GENE'], row['TARGET'])
-        print()
+        
+        counter = 0
+        
+        while counter < 10:
+            try:
+                snpgene = row['SNP'] + '-' + row['GENE']
+                print(f'  {snpgene} {idx+1}/{eqtl_input_df.shape[0]}  '.center(50, '-')); print('-'*50, end='\n\n')
+                eqtl_dict[snpgene] = get_eQTL(row['SNP'], row['GENE'], row['TARGET'])
+                counter = 10
+                print()
+            except:
+                counter += 1
+                print('\n\n\033[1;31mERROR:\033[m TRYING AGAIN...\n\n')
+
     
     snp_dict = defaultdict(dict)
     for snp in eqtl_dict:
